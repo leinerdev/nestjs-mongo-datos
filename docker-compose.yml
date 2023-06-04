@@ -5,6 +5,7 @@ services:
   mongo:
     image: mongo:4.4
     environment:
+      MONGO_INITDB_DATABASE: nestjs-mongo
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: root
     ports:
